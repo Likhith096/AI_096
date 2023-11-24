@@ -44,7 +44,11 @@ def possible_moves(state, vis):
   pos_moves = []
   for i in d:
     pos_moves.append(generate(state,i,b))
-    print(generate(state,i,b))
+    poss_state = generate(state,i,b)
+    print(poss_state[0], " ",poss_state[1], " ",poss_state[2], " ")
+    print(poss_state[3], " ",poss_state[4], " ",poss_state[5], " ")
+    print(poss_state[6], " ",poss_state[7], " ",poss_state[8], " ")
+    print("\n\n")
 
   return [moves for moves in pos_moves if moves not in vis]
 
